@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <H1>Esta es la tercera vista personalizada</H1>
+    <h3 class = "text-primary">{{otro_valor}}</h3>
+    <li>
+        {%for elemento in lista%}
+        <ul>Número# {{ elemento }}</ul>
+        {% endfor %}
+    </li>
+{% endblock %}

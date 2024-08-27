@@ -19,9 +19,10 @@ from django.urls import path
 
 #importacion de las views.py de web_app (retornar vista_ejemplo)
 from web_app.views import retornar_vista_ejemplo
-from new_app.views import retornar_obtener_nuevo
+from new_app.views import *
 urlpatterns = [
     path('ejemplo/', retornar_vista_ejemplo),
     path('admin/', admin.site.urls),
-    path('nuevo',retornar_obtener_nuevo)
+    path('nuevo/',retornar_obtener_nuevo),
+    path('listado/',obtener_listado)
 ]
